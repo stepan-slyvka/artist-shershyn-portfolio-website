@@ -16,9 +16,10 @@ const App = () => {
     setNav(!nav);
   };
 
-  const closeNav = () => {
-    setNav(false);
-  };
+  // const closeNav = () => {
+  //   setNav(false);
+  // };
+
   return (
     <Fragment>
       <Navbar nav={nav} toggleNav={toggleNav} />
