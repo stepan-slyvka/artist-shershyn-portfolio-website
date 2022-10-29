@@ -1,0 +1,42 @@
+/* Desktop */
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 12vh;
+  background-color: #ccc;
+}
+
+.text-wrapper {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  color: #000;
+  opacity: 0.5;
+  padding: 5px;
+}
+
+.wrapper h3 {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.wrapper h3,
+.wrapper p {
+  opacity: 0.5;
+}
+
+/* Mobile devices */
+
+@media screen and (min-width: 340px) and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    height: 15vh;
+  }
+}

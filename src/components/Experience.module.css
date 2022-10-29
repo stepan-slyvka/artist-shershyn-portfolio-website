@@ -1,0 +1,48 @@
+/* Desktop */
+
+.wrapper {
+  width: 100%;
+  background-color: #e9e9e9;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 30%);
+  margin-bottom: 15px;
+}
+
+.text-wrapper {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.text-wrapper h1 {
+  display: inline-flex;
+  align-items: center;
+  font-size: 21pt;
+}
+
+.text-wrapper p {
+  font-size: 15pt;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-area: 1 / 1 / 5 / 4;
+  padding: 30px 0;
+  margin: 0 20px;
+  padding-bottom: 50px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+/* For mobile devices */
+
+@media screen and (min-width: 340px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

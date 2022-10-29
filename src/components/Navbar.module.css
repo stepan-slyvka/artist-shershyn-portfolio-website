@@ -1,0 +1,101 @@
+/* Desktop */
+
+.small-devices-menu,
+.hamburger {
+  display: none;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.container {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 30pt;
+  letter-spacing: 6px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.container ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.container li {
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+.container li a:hover {
+  border-bottom: 3px solid #000;
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container ul {
+    display: none;
+  }
+
+  .small-devices-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .small-devices-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+  }
+
+  .small-devices-menu li {
+    padding: 20px 0;
+    cursor: pointer;
+    font-size: 30pt;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* For Mobile Devices */
+
+@media screen and (min-width: 340px) and (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+  }
+
+  .container ul {
+    display: none;
+  }
+
+  .container h1 {
+    font-size: 20pt;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
