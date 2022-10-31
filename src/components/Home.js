@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 import classes from "./Home.module.css";
 
-import heroImg from "../assets/heroImage.jpg";
+import heroImg from "../assets/cropped_images/heroImage.jpg";
 
 import { HiOutlineArrowRight } from "react-icons/hi";
 
@@ -18,7 +18,7 @@ const Home = () => {
           <p>Young, talanted artist from Ukraine, Transcarpathia</p>
         </div>
         <div className={classes.btn}>
-          <Link to="Experience" smooth={true} duration={500}>
+          <Link to="Works" smooth={true} duration={500}>
             <button>
               See my work <HiOutlineArrowRight />
             </button>

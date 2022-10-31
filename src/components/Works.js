@@ -4,16 +4,16 @@ import classes from "./Works.module.css";
 
 import { GoPaintcan } from "react-icons/go";
 
-import art1 from "../assets/art1.JPG";
-import art2 from "../assets/art2.JPG";
-import art3 from "../assets/art3.JPG";
-import art4 from "../assets/art4.JPG";
-import art5 from "../assets/art5.JPG";
-import art6 from "../assets/art6.JPG";
-import art7 from "../assets/art7.JPG";
-import art8 from "../assets/art8.JPG";
-import art9 from "../assets/art9.JPG";
-import art10 from "../assets/art10.JPG";
+import art1 from "../assets/cropped_images/art1.jpg";
+import art2 from "../assets/cropped_images/art2.jpg";
+import art3 from "../assets/cropped_images/art3.jpg";
+import art4 from "../assets/cropped_images/art4.jpg";
+import art5 from "../assets/cropped_images/art5.jpg";
+import art6 from "../assets/cropped_images/art6.jpg";
+import art7 from "../assets/cropped_images/art7.jpg";
+import art8 from "../assets/cropped_images/art8.jpg";
+import art9 from "../assets/cropped_images/art9.jpg";
+import art10 from "../assets/cropped_images/art10.jpg";
 
 const Works = () => {
   const items = [

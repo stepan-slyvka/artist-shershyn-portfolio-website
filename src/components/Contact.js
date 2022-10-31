@@ -4,7 +4,7 @@ import classes from "./Contact.module.css";
 
 import { useFormik } from "formik";
 
-import art from "../assets/art14.JPG";
+import art from "../assets/cropped_images/art14.jpg";
 
 import { MdOutlineTouchApp } from "react-icons/md";
 import { BsFacebook } from "react-icons/bs";

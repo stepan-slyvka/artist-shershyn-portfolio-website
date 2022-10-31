@@ -18,7 +18,7 @@ const About = () => {
         <img src={Ivan} alt="artist" />
         <div className={classes.text}>
           <p>
-            I, Shershun Ivan Vasyliovych, was born in the village Nove
+            My name is Shershun Ivan Vasyliovych and I was born in village Nove
             Davydkovo, Transcarpathia, near the Mukachevo city, I am Ukrainian.
             In 2009, I entered the Mukachevo art school. I started creating my
             first oil works in 2007.
