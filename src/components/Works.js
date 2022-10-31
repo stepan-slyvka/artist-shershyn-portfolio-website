@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./Experience.module.css";
+import classes from "./Works.module.css";
 
 import { GoPaintcan } from "react-icons/go";
 
@@ -15,7 +15,7 @@ import art8 from "../assets/art8.JPG";
 import art9 from "../assets/art9.JPG";
 import art10 from "../assets/art10.JPG";
 
-const Experience = () => {
+const Works = () => {
   const items = [
     {
       id: 1,
@@ -70,10 +70,10 @@ const Experience = () => {
   ];
 
   return (
-    <section className={classes.wrapper} name="Experience">
+    <section className={classes.wrapper} name="Works">
       <div className={classes["text-wrapper"]}>
         <h1>
-          Experience <GoPaintcan />
+          My Works <GoPaintcan />
         </h1>
         <p>Here are some of my work examples</p>
       </div>
@@ -89,4 +89,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Works;

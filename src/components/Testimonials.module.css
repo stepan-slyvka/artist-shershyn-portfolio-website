@@ -41,6 +41,10 @@
 /* For mobile devices */
 
 @media screen and (min-width: 340px) and (max-width: 768px) {
+  .wrapper {
+    min-height: 900px;
+  }
+
   .text-wrapper h1 {
     padding-top: 100px;
   }

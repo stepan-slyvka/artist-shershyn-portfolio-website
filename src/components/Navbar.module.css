@@ -1,10 +1,4 @@
 /* Desktop */
-
-.small-devices-menu,
-.hamburger {
-  display: none;
-}
-
 .nav {
   position: fixed;
   width: 100%;
@@ -48,54 +42,44 @@
 
 /* Tablets */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .container {
+    margin: 0 10px;
+    flex-direction: column;
+  }
+
+  .container h1 {
+    font-size: 28pt;
+  }
+
   .container ul {
-    display: none;
+    padding: 0 0 10px 0;
   }
 
-  .small-devices-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .small-devices-menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-  }
-
-  .small-devices-menu li {
-    padding: 20px 0;
-    cursor: pointer;
-    font-size: 30pt;
-  }
-
-  .hamburger {
-    display: block;
+  .container li {
+    padding: 0 20px;
+    font-size: 16pt;
   }
 }
 
 /* For Mobile Devices */
 
-@media screen and (min-width: 340px) and (max-width: 768px) {
+@media screen and (min-width: 340px) and (max-width: 767px) {
   .container {
     margin: 0 10px;
-  }
-
-  .container ul {
-    display: none;
+    flex-direction: column;
   }
 
   .container h1 {
     font-size: 20pt;
   }
 
-  .hamburger {
-    display: block;
+  .container ul {
+    padding: 0 0 10px 0;
+  }
+
+  .container li {
+    padding: 0 5px;
+    font-size: 13pt;
   }
 }

@@ -18,28 +18,22 @@ const About = () => {
         <img src={Ivan} alt="artist" />
         <div className={classes.text}>
           <p>
-            Ad aute aliqua consequat reprehenderit eiusmod aute enim irure
-            deserunt consequat do. Cupidatat proident ullamco ullamco aute
-            veniam commodo dolor reprehenderit fugiat irure. Nostrud Lorem
-            reprehenderit do ex quis anim. Aliquip excepteur magna in ad quis
-            duis dolore irure velit do et commodo voluptate elit. Sunt occaecat
-            Lorem sint nisi nisi ipsum laborum exercitation ipsum ex.
+            I, Shershun Ivan Vasyliovych, was born in the village Nove
+            Davydkovo, Transcarpathia, near the Mukachevo city, I am Ukrainian.
+            In 2009, I entered the Mukachevo art school. I started creating my
+            first oil works in 2007.
           </p>
           <p>
-            Ad aute aliqua consequat reprehenderit eiusmod aute enim irure
-            deserunt consequat do. Cupidatat proident ullamco ullamco aute
-            veniam commodo dolor reprehenderit fugiat irure. Nostrud Lorem
-            reprehenderit do ex quis anim. Aliquip excepteur magna in ad quis
-            duis dolore irure velit do et commodo voluptate elit. Sunt occaecat
-            Lorem sint nisi nisi ipsum laborum exercitation ipsum ex.
+            I studied from local artists since I was a teenager, organized local
+            plein airs. I devoted all my free time to art, painting and tried
+            painting on wood. More than 30 of my first works are exhibited in a
+            private museum in Kyiv.
           </p>
           <p>
-            Ad aute aliqua consequat reprehenderit eiusmod aute enim irure
-            deserunt consequat do. Cupidatat proident ullamco ullamco aute
-            veniam commodo dolor reprehenderit fugiat irure. Nostrud Lorem
-            reprehenderit do ex quis anim. Aliquip excepteur magna in ad quis
-            duis dolore irure velit do et commodo voluptate elit. Sunt occaecat
-            Lorem sint nisi nisi ipsum laborum exercitation ipsum ex.
+            My creative oil works can be found in private collections in Greece,
+            Canada, USA, Russia, Germany. A large number of my works were sold
+            at the Violiti auction. I am the author of more than 250 works with
+            oil on canvas. At the moment, I paint paintings on order.
           </p>
         </div>
       </div>
