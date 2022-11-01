@@ -16,7 +16,7 @@ const Footer = () => {
         </Link>
         <div className={classes.social}>
           <a
-            href="https://uk-ua.facebook.com/"
+            href="https://www.facebook.com/people/Shershun-Ivan/100005922678012/"
             target="_blank"
             rel="noreferrer"
           >

@@ -72,9 +72,9 @@ const Contact = () => {
               Phone: <AiOutlinePhone /> +380951657286 - Viber <FaViber />,
               WhatsApp <FaWhatsapp />, Telegram <FaTelegram />
             </p>
-            <p>Email: ..............</p>
+            <p>Email: shershun2022@gmail.com</p>
             <a
-              href="https://uk-ua.facebook.com/"
+              href="https://www.facebook.com/people/Shershun-Ivan/100005922678012/"
               target="_blank"
               rel="noreferrer"
             >

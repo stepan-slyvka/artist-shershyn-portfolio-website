@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "./About.module.css";
 
-import Ivan from "../assets/ivan_shershyn.jpg";
+import Ivan from "../assets/cropped_images/ivan_shershyn.jpg";
 
 import { BiPaint } from "react-icons/bi";
 
