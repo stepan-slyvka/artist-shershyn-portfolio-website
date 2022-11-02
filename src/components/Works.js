@@ -4,7 +4,7 @@ import classes from "./Works.module.css";
 
 import { GoPaintcan } from "react-icons/go";
 
-import art1 from "../assets/cropped_images/art1.JPG";
+import art1 from "../assets/cropped_images/art1.jpg";
 import art2 from "../assets/cropped_images/art2.jpg";
 import art3 from "../assets/cropped_images/art3.jpg";
 import art4 from "../assets/cropped_images/art4.jpg";
