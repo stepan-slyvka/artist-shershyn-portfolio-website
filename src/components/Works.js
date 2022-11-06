@@ -4,7 +4,11 @@ import classes from "./Works.module.css";
 
 import { GoPaintcan } from "react-icons/go";
 
-import art1 from "../assets/cropped_images/art1.jpg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import art1 from "../assets/cropped_images/art1.JPG";
 import art2 from "../assets/cropped_images/art2.jpg";
 import art3 from "../assets/cropped_images/art3.jpg";
 import art4 from "../assets/cropped_images/art4.jpg";
@@ -16,6 +20,25 @@ import art9 from "../assets/cropped_images/art9.jpg";
 import art10 from "../assets/cropped_images/art10.jpg";
 
 const Works = () => {
+  const settings = {
+    accessibility: true,
+    draggable: true,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    adaptiveHeight: true,
+    autoplaySpeed: 4000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    swipe: true,
+    autoplay: true,
+    fade: true,
+    centerMode: true,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   const items = [
     {
       id: 1,
@@ -79,11 +102,13 @@ const Works = () => {
       </div>
 
       <div className={classes.container}>
-        {items.map(({ id, src, title }) => (
-          <div key={id} className={classes["image-wrapper"]}>
-            <img src={src} alt={title} />
-          </div>
-        ))}
+        <Slider {...settings} className={classes.carousel}>
+          {items.map(({ id, src, title }) => (
+            <div key={id} className={classes["image-wrapper"]}>
+              <img src={src} alt={title} />
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );
