@@ -4,11 +4,11 @@ import classes from "./Works.module.css";
 
 import { GoPaintcan } from "react-icons/go";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "photoswipe/dist/photoswipe.css";
 
-import art1 from "../assets/cropped_images/art1.jpg";
+import { Gallery, Item } from "react-photoswipe-gallery";
+
+import art1 from "../assets/cropped_images/art1.JPG";
 import art2 from "../assets/cropped_images/art2.jpg";
 import art3 from "../assets/cropped_images/art3.jpg";
 import art4 from "../assets/cropped_images/art4.jpg";
@@ -20,95 +20,184 @@ import art9 from "../assets/cropped_images/art9.jpg";
 import art10 from "../assets/cropped_images/art10.jpg";
 
 const Works = () => {
-  const settings = {
-    accessibility: true,
-    draggable: true,
-    arrows: false,
-    dots: true,
-    infinite: true,
-    adaptiveHeight: true,
-    autoplaySpeed: 4000,
-    pauseOnFocus: true,
-    pauseOnHover: true,
-    swipe: true,
-    autoplay: true,
-    fade: true,
-    centerMode: true,
-    speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  const items = [
-    {
-      id: 1,
-      src: art1,
-      title: "Winter art",
-    },
-    {
-      id: 2,
-      src: art2,
-      title: "Sunset",
-    },
-    {
-      id: 3,
-      src: art3,
-      title: "Prince",
-    },
-    {
-      id: 4,
-      src: art4,
-      title: "King",
-    },
-    {
-      id: 5,
-      src: art5,
-      title: "Sea",
-    },
-    {
-      id: 6,
-      src: art6,
-      title: "Horse",
-    },
-    {
-      id: 7,
-      src: art7,
-      title: "Lion",
-    },
-    {
-      id: 8,
-      src: art8,
-      title: "Flowers",
-    },
-    {
-      id: 9,
-      src: art9,
-      title: "Winter landscape",
-    },
-    {
-      id: 10,
-      src: art10,
-      title: "Child and a rabbit",
-    },
-  ];
-
   return (
     <section className={classes.wrapper} name="Works">
       <div className={classes["text-wrapper"]}>
         <h1>
           My Works <GoPaintcan />
         </h1>
-        <p>Here are some of my work examples</p>
+        <p>
+          Here are some of my work examples (click on image to see full version)
+        </p>
       </div>
 
       <div className={classes.container}>
-        <Slider {...settings} className={classes.carousel}>
-          {items.map(({ id, src, title }) => (
-            <div key={id} className={classes["image-wrapper"]}>
-              <img src={src} alt={title} />
-            </div>
-          ))}
-        </Slider>
+        <Gallery>
+          <Item original={art1} thumbnail={art1} width="700" height="968">
+            {({ ref, open }) => (
+              <img
+                alt="Winter art"
+                ref={ref}
+                onClick={open}
+                src={art1}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art2}
+            thumbnail={art2}
+            width="1024"
+            height="768"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Sunset"
+                ref={ref}
+                onClick={open}
+                src={art2}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art3}
+            thumbnail={art3}
+            width="700"
+            height="968"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Prince"
+                ref={ref}
+                onClick={open}
+                src={art3}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art4}
+            thumbnail={art4}
+            width="700"
+            height="968"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="King"
+                ref={ref}
+                onClick={open}
+                src={art4}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art5}
+            thumbnail={art5}
+            width="1024"
+            height="768"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Sea"
+                ref={ref}
+                onClick={open}
+                src={art5}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art6}
+            thumbnail={art6}
+            width="700"
+            height="968"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Horse"
+                ref={ref}
+                onClick={open}
+                src={art6}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art7}
+            thumbnail={art7}
+            width="700"
+            height="968"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Lion"
+                ref={ref}
+                onClick={open}
+                src={art7}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art8}
+            thumbnail={art8}
+            width="800"
+            height="968"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Flowers"
+                ref={ref}
+                onClick={open}
+                src={art8}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art9}
+            thumbnail={art9}
+            width="800"
+            height="968"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Winter landscape"
+                ref={ref}
+                onClick={open}
+                src={art9}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+          <Item
+            original={art10}
+            thumbnail={art10}
+            width="700"
+            height="968"
+            className={classes.photos}
+          >
+            {({ ref, open }) => (
+              <img
+                alt="Child and a rabbit"
+                ref={ref}
+                onClick={open}
+                src={art10}
+                className={classes.photos}
+              />
+            )}
+          </Item>
+        </Gallery>
       </div>
     </section>
   );
